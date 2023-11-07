@@ -1,0 +1,55 @@
+.footer-region {
+  margin-top: 100px;
+  h4 {
+    text-align: left;
+  }
+}
+.brand-info .branding {
+  justify-content: normal;
+}
+.brand-info {
+  width: 31%;
+}
+.pages, .footer-services, .footer-contact {
+  ul {
+    list-style: none;
+  }
+  a {
+    line-height: 66px;
+    letter-spacing: 0.22px;
+    text-align: left;
+  }
+}
+.pages, .footer-services {
+  width: 18%;
+}
+.footer-contact {
+  width: 20%;
+  h4 {
+    padding-bottom: 10px;
+  }
+  address {
+    color: #4d5053;
+    font-family: Jost;
+    font-size: 22px;
+    font-style: normal;
+  }
+  ul {
+    list-style: none;
+  }
+}
+.slogan {
+  padding-top: 10px;
+}
+.social-icons {
+  width: 50%;
+  padding-top: 31px;
+}
+.copyright {
+  border-top: 1px solid rgba(0,0,0, 0.2);
+  margin-top: 100px;
+}
+.copyright p{
+  padding: 40px 0;
+  text-align: center;
+}

@@ -1,0 +1,52 @@
+.project-header {
+  padding: 26px 20%;
+  text-align: center;
+  margin: 40px 0;
+
+  h2, p {
+    text-align: center;
+  }
+}
+.project-child-block {
+  gap: 42px;
+}
+
+.project-details {
+  position: relative;
+  padding-top: 18px;
+}
+.project-details svg {
+  position: absolute;
+  right: 5px;
+  bottom: -8px;
+}
+
+.section1 {
+  .projects {
+    &:nth-child(1) {
+      .projects-inner-box img {
+        border-top-right-radius: 100px;
+      }
+    }
+    &:nth-child(2) {
+      .projects-inner-box img {
+        border-top-left-radius: 100px;
+      }
+    }
+  }
+}
+
+.section2 {
+  .projects {
+    &:nth-child(1) {
+      .projects-inner-box img {
+        border-bottom-right-radius: 100px;
+      }
+    }
+    &:nth-child(2) {
+      .projects-inner-box img {
+        border-bottom-left-radius: 100px;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.testimonials-wrap {
+  margin: 150px 0;
+  background: #f4f0ec;
+  border-radius: 50px;
+}
+.testimonials-inner {
+  padding: 50px;
+  gap: 38px;
+
+  h2 {
+    text-align: center;
+    padding: 10px 77px;
+    width: 72%;
+  }
+}
+
+.card-deck {
+  flex-wrap: nowrap;
+  gap: 20px;
+  align-items: center;
+}
+.card {
+  background: #fff;
+  border-radius: 35px;
+
+  p {
+    text-align: left;
+  }
+}
+.card-inner {
+  display: flex;
+  padding: 20px 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  margin: 40px;
+}
+.person {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+  }
+}

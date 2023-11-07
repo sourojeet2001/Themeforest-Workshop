@@ -1,0 +1,29 @@
+.contactus {
+  border-radius: 70px;
+  background: #292f36;
+  gap: 32px;
+  padding: 80px 315px;
+  margin: 40px 0;
+}
+.contact-header {
+  h2, p {
+    color: #fff;
+    text-align: center;
+  }
+}
+
+.contact-btn {
+  position: relative;
+  padding: 26px 37px;
+  text-decoration: none;
+  color: white;
+  border-radius: 18px;
+  background: #cda274;
+  box-shadow: 0px 10px 20px 0px #1f2022;
+
+  svg {
+    position: absolute;
+    right: 14px;
+    top: 28px;
+  }
+}

@@ -1,0 +1,58 @@
+
+@use "./variables.scss" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1200px;
+}
+
+h1, h2, h3, h4 {
+  color: $primary-text-color;
+  font-family: $primary-font-family;
+  font-style: $primary-text-style;
+  font-weight: $basic-font-weight;
+}
+h1 {
+  font-size: 84px;
+  line-height: 105px;
+}
+h2 {
+  font-size: 50px;
+  line-height: 62.5px;
+  letter-spacing: 1px;
+}
+h3 {
+  font-size: 40px;
+  line-height: 50px;
+}
+h4 {
+  // text-align: center;
+  font-size: 25px;
+  line-height: 31.35px;
+}
+p {
+  color: #4d5053;
+  font-family: Jost;
+  font-size: 22px;
+  font-style: $primary-text-style;
+  font-weight: $basic-font-weight;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+}
+a {
+  text-decoration: $anchor-text-decoration;
+  color: $primary-text-color;
+  text-align: $anchor-text-align;
+  font-family: $anchor-font-family;
+  font-size: $anchor-font-size;
+  font-style: $primary-text-style;
+  font-weight: $anchor-font-weight;
+}
+

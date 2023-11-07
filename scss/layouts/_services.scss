@@ -1,0 +1,28 @@
+.services {
+  padding: 15% 0;
+}
+.services-item-box {
+  text-align: center;
+}
+.services-inner-item-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 52px;
+  padding: 0 30px;
+
+  p {
+    text-align: center;
+  }
+
+  a {
+    font-size: 18px;
+    font-weight: 600;
+
+    svg {
+      width: 15.141px;
+      height: 13.177px;
+      flex-shrink: 0;
+    }
+  }
+}

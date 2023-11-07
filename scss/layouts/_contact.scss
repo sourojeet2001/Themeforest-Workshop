@@ -1,0 +1,36 @@
+.contact {
+  gap: 47px;
+}
+.contact-details {
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-info {
+  h4 {
+    color: #4d5053;
+    font-family: Jost;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.24px;
+    text-align: left;
+  }
+}
+
+
+.contact .get-started {
+  padding: 26px 22px;
+}
+
+.product {
+  height: 653px;
+  width: 50%;
+  flex: 50%;
+
+  img {
+    width: 100%;
+    border-radius: 0px 326px 0px 123px;
+    background: #c4c4c4;
+    height: 100%;
+  }
+}

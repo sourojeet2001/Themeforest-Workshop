@@ -1,0 +1,14 @@
+.estimate {
+  flex-wrap: nowrap;
+  gap: 25px;
+}
+.estimate-text-box {
+  width: 50%;
+  flex: 50%;
+}
+.estimate-inner-text-box {
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 75px;
+  margin-top: 35px;
+}

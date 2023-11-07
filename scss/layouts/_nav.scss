@@ -1,0 +1,29 @@
+@use "../base/base" as *;
+@use "../base/variables" as *;
+
+.primary-navbar {
+  padding: 10px;
+}
+.branding {
+  align-items: $center-alignment;
+  font-size: 30px;
+  font-weight: $basic-font-weight;
+  gap: 10px;
+}
+.brand-logo {
+  padding-top: 5px;
+}
+.menu-item-list {
+  list-style: none;
+  a {
+    padding: 10px;
+  }
+}
+
+.search-icon {
+  width: 20.999px;
+  height: 21px;
+  flex-shrink: 0;
+  opacity: 0.8;
+  padding-left: 10px;
+}
