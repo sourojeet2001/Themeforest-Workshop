@@ -21,7 +21,7 @@ function styles() {
     }))
     .on('error', console.error.bind(console))
     .pipe(autoprefixer({
-      overrideBrowserslist: ['last 2 versions'],
+      overrideBrowserslist: ['last 3 versions'],
       cascade: false,
     }))
     .pipe(cleanCSS())

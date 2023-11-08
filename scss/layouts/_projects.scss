@@ -1,7 +1,7 @@
 .project-header {
   padding: 26px 20%;
   text-align: center;
-  margin: 40px 0;
+  margin: 93px 0;
 
   h2, p {
     text-align: center;
@@ -12,16 +12,19 @@
 }
 
 .project-details {
-  position: relative;
+  // position: relative;
   padding-top: 18px;
+  flex-wrap: nowrap;
 }
-.project-details svg {
-  position: absolute;
-  right: 5px;
-  bottom: -8px;
-}
+// .project-details svg {
+//   position: absolute;
+//   right: 5px;
+//   bottom: -8px;
+// }
 
 .section1 {
+  justify-content: flex-start;
+  gap: 104px;
   .projects {
     &:nth-child(1) {
       .projects-inner-box img {
@@ -37,6 +40,8 @@
 }
 
 .section2 {
+  justify-content: flex-start;
+  gap: 104px;
   .projects {
     &:nth-child(1) {
       .projects-inner-box img {

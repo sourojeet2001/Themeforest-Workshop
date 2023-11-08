@@ -1,8 +1,8 @@
-.contact {
-  gap: 47px;
-}
+@use "../modules/typography" as *;
+
 .contact-details {
-  align-items: center;
+  padding: 48px 0;
+  align-items: center;  
   gap: 10px;
 }
 
@@ -19,11 +19,11 @@
 
 
 .contact .get-started {
-  padding: 26px 22px;
+  padding: 28px 20px;
 }
 
 .product {
-  height: 653px;
+  height: 745px;
   width: 50%;
   flex: 50%;
 

@@ -1,5 +1,6 @@
 
 @use "./variables.scss" as *;
+@use "../modules/typography" as *;
 
 * {
   margin: 0;
@@ -20,35 +21,35 @@ h1, h2, h3, h4 {
   font-weight: $basic-font-weight;
 }
 h1 {
-  font-size: 84px;
+  font-size: 86px;
   line-height: 105px;
 }
 h2 {
-  font-size: 50px;
-  line-height: 62.5px;
+  font-size: 48px;
+  line-height: 64px;
   letter-spacing: 1px;
 }
 h3 {
   font-size: 40px;
-  line-height: 50px;
+  line-height: 48px;
 }
 h4 {
   // text-align: center;
-  font-size: 25px;
-  line-height: 31.35px;
+  font-size: 24px;
+  line-height: 32px;
 }
 p {
   color: #4d5053;
   font-family: Jost;
-  font-size: 22px;
+  font-size: 20px;
   font-style: $primary-text-style;
   font-weight: $basic-font-weight;
-  line-height: 33px;
+  line-height: 32px;
   letter-spacing: 0.22px;
 }
 a {
   text-decoration: $anchor-text-decoration;
-  color: $primary-text-color;
+  color: #4D5053;
   text-align: $anchor-text-align;
   font-family: $anchor-font-family;
   font-size: $anchor-font-size;
