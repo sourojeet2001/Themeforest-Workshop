@@ -23,7 +23,7 @@
   justify-content: flex-start;
   justify-content: left;
   text-align: left;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
   border-top-left-radius: 48px;
   border-top-right-radius: 48px;
   border-bottom-left-radius: 48px;
@@ -55,8 +55,8 @@
   margin-bottom: 20px;
 
   img {
-    border-top-right-radius: 14%;
-    border-top-left-radius: 14%;
+    border-top-right-radius: 33px;
+    border-top-left-radius: 33px;
     height: 100%;
     width: 100%;
   }

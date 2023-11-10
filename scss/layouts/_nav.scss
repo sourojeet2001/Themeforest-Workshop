@@ -2,7 +2,7 @@
 @use "../base/variables" as *;
 
 .primary-navbar {
-  padding: 12px;
+  padding: 32px 0;
 }
 .brand {
   gap: 5px;
@@ -19,7 +19,7 @@
 .menu-item-list {
   list-style: none;
   a {
-    padding: 20px;
+    padding: 24px;
   }
 }
 
@@ -29,4 +29,8 @@
   flex-shrink: 0;
   opacity: 0.8;
   padding-left: 12px;
+}
+
+.hamburger {
+  display: none;
 }
