@@ -15,6 +15,7 @@
 .pages, .footer-services, .footer-contact {
   ul {
     list-style: none;
+    padding-top: 10px;
   }
   a {
     line-height: 64px;
@@ -27,10 +28,8 @@
 }
 .footer-contact {
   width: 20%;
-  h4 {
-    padding-bottom: 12px;
-  }
   address {
+    padding-top: 16px;
     color: #4d5053;
     font-family: Jost;
     font-size: 20px;

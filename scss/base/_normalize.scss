@@ -325,7 +325,7 @@
 }
 
 // Responsive for Tablet.
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   .container {
     max-width: 650px;
   }
@@ -619,7 +619,6 @@
     }
   }
 }
-
 
 // Responsive for Galaxy Fold Horizontal.
 @media screen and (max-width: 720px) {
@@ -937,8 +936,15 @@
   }
 }
 
+// Responsive for Galaxy Fold Horizontal Flip Landscape Window.
+@media screen and (max-width: 653px) {
+  .hero-banner {
+    border-radius: 0 0 0 108px;
+  }
+}
+
 // Responsive for Mobile Large and Medium.
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 450px) {
   .container {
     max-width: 350px;
   }
@@ -1036,9 +1042,13 @@
     }
   }
 
+  .contact {
+    gap: 4px;
+  }
   .contact  .get-started {
-    width: 78%;
-    padding: 14px 14px;
+    width: 68%;
+    padding: 12px 10px;
+    gap: 8px;
   }
   .contact-info h4 {
     line-height: 28px;
@@ -1126,9 +1136,14 @@
   }
 
   .facts-inner-box {
-    margin: 0 10px;
-    padding-left: 10px;
+    margin: 0 2px;
+    padding-left: 8px;
+    padding-right: 14px;
     border: none;
+
+    &:nth-child(odd) {
+      border-right: 1px solid black;
+    }
   }
 
   .articles-header {
@@ -1444,7 +1459,7 @@
   .facts-inner-box {
     margin: 0 10px;
     padding-left: 10px;
-    border: none;
+    border: none !important;
   }
 
   .articles-header {

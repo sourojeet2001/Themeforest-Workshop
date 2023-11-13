@@ -8,6 +8,10 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+body{
+  background: linear-gradient(to right, #E6E6E6 1px, transparent 1px);
+  background-size: 366px;
+}
 .container {
   margin: 0 auto;
   padding: 0 10px;

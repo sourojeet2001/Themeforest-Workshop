@@ -13,6 +13,10 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+body {
+  background: linear-gradient(to right, #e6e6e6 1px, transparent 1px);
+  background-size: 366px;
+}
 .container {
   margin: 0 auto;
   padding: 0 10px;
@@ -492,12 +496,7 @@ a {
   line-height: 24px;
   letter-spacing: 0.16px;
   text-transform: capitalize;
-}
-/* Articles Section Style End. */
-
-/* Contact Section Style Start. */
-.contact {
-  gap: 47px;
+  padding-right: 36px;
 }
 .contact-details {
   padding: 48px 0;
@@ -573,6 +572,7 @@ a {
 .footer-services ul,
 .pages ul {
   list-style: none;
+  padding-top: 10px;
 }
 .footer-contact a,
 .footer-services a,
@@ -588,10 +588,8 @@ a {
 .footer-contact {
   width: 20%;
 }
-.footer-contact h4 {
-  padding-bottom: 12px;
-}
 .footer-contact address {
+  padding-top: 16px;
   color: #4d5053;
   font-family: Jost;
   font-size: 20px;
@@ -919,7 +917,7 @@ a {
     margin: 0 2px;
   }
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   .container {
     max-width: 650px;
   }
@@ -1533,8 +1531,14 @@ a {
     padding: 16px 0;
   }
 }
-/* Responsive for Mobile Large and Medium. */
-@media screen and (max-width: 430px) {
+/* Responsive for Galaxy Fold Horizontal Flip Landscape Window. */
+@media screen and (max-width: 653px) {
+  .hero-banner {
+    border-radius: 0 0 0 108px;
+  }
+}
+/* Responsive for Mobile large and medium. */
+@media screen and (max-width: 450px) {
   .container {
     max-width: 350px;
   }
@@ -1639,9 +1643,13 @@ a {
   .contact-details svg {
     width: 62px;
   }
+  .contact {
+    gap: 4px;
+  }
   .contact .get-started {
-    width: 78%;
-    padding: 14px 14px;
+    width: 68%;
+    padding: 12px 10px;
+    gap: 8px;
   }
   .contact-info h4 {
     line-height: 28px;
@@ -1724,9 +1732,13 @@ a {
     flex-wrap: wrap;
   }
   .facts-inner-box {
-    margin: 0 10px;
-    padding-left: 10px;
+    margin: 0 2px;
+    padding-left: 8px;
+    padding-right: 14px;
     border: none;
+  }
+  .facts-inner-box:nth-child(odd) {
+    border-right: 1px solid #000;
   }
   .articles-header {
     margin: 12px 0;
@@ -2035,7 +2047,7 @@ a {
   .facts-inner-box {
     margin: 0 10px;
     padding-left: 10px;
-    border: none;
+    border: none !important;
   }
   .articles-header {
     margin: 12px 0;
