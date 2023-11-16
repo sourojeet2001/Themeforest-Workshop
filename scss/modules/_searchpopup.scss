@@ -1,0 +1,132 @@
+$size: 1em;
+$timing: ease;
+
+$white: #fff;
+
+@mixin transition($time, $timing) {
+  -webkit-transition: $time $timing all;
+  -moz-transition: $time $timing all;
+  transition: $time $timing all;
+}
+
+// body {
+//   background-color: #212121;
+//   background-image: url("http://wallpanda.com/wp-content/uploads/2015/05/Hd-backgrounds-premium-widescreen-hd-4-backgrounds-for-free-download-hd.jpg");
+//   background-position: center top;
+//   background-repeat: no-repeat;
+//   background-size: 100% auto;
+//   font-family: "Open Sans", sans-serif;
+// }
+
+#search-menu {
+  position: fixed;
+  width: 100%;
+  height: $size * 20;
+  top: -$size * 20;
+  left: 0;
+  right: 0;
+  white-space: nowrap;
+  z-index: 9999;
+  background: -moz-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0.01) 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, rgba(0, 0, 0, 0.8)),
+    color-stop(50%, rgba(0, 0, 0, 0.8)),
+    color-stop(100%, rgba(0, 0, 0, 0.01))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0.01) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0.01) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0.01) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0.01) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc000000', endColorstr='#1a000000',GradientType=0);
+  opacity: 0;
+  visibility: hidden;
+  @include transition(500ms, $timing);
+
+  &.toggled {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .wrapper {
+    position: relative;
+    margin: $size * 3 auto 0 auto;
+    padding: 0 $size;
+
+    input {
+      width: 90%;
+      // padding: 0 0 $size / 8 0;
+      background: transparent;
+      border: none;
+      border-bottom: 3px solid darken($white, 25%);
+      font-size: $size * 4;
+      color: darken($white, 25%);
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      position: absolute;
+      display: block;
+      width: 10%;
+      right: 0;
+      top: 0;
+      background: transparent;
+      border: none;
+      color: darken($white, 25%);
+      font-size: $size * 4;
+      @include transition(500ms, $timing);
+
+      &:hover {
+        color: $white;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+// #search-icon {
+//   // padding: 0 $size / 2 $size / 4 $size / 2;
+//   font-size: $size * 5;
+//   cursor: pointer;
+//   color: darken($white, 25%);
+//   text-align: center;
+//   @include transition(500ms, $timing);
+
+//   &:hover {
+//     color: $white;
+//   }
+// }

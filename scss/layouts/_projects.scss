@@ -1,3 +1,5 @@
+@use "../base/mixins" as *;
+
 .project-header {
   padding: 26px 20%;
   text-align: center;
@@ -15,6 +17,15 @@
   // position: relative;
   padding-top: 18px;
   flex-wrap: nowrap;
+
+  a:hover {
+    svg {
+      circle {
+        @include project-btn
+      }
+    }
+  }
+
 }
 // .project-details svg {
 //   position: absolute;

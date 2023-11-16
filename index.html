@@ -5,65 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./dist/css/main.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
       integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/accordion.js"></script>
+    <script src="./js/darkmodeswitcher.js"></script>
+    <script src="./js/searchpopup.js"></script>
   </head>
   <body>
     <!-- Header Start. -->
     <header>
       <div class="container">
         <!-- Navigation Start. -->
+
+        <div class="sm-nav">
+          <div class="menu-btn">
+            <span class="menu-btn__burger"> </span>
+          </div>
+          <div class="mode-switcher">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox-label">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <span class="ball"></span>
+            </label>
+          </div>
+        </div>
+
         <nav>
           <div class="primary-navbar flex-wrap">
-            <img src="./assets/icons/Logo.svg" alt="" class="logo">
+            <div class="brand-logo">
+              <img src="./assets/icons/Logo.svg" alt="" class="logo" />
+            </div>
             <!-- Primary Menu Start. -->
             <div class="primary-menu flex-center">
               <ul class="menu-item-list flex-center">
-                <li class="menu-items">
-                  <a href="#">Home</a>
+                <li class="menu-items active">
+                  <a href="#" class="menu-items__link">Home</a>
                 </li>
                 <li class="menu-items">
-                  <a href="#">Pages</a>
+                  <a href="#" class="menu-items__link">Pages</a>
                 </li>
                 <li class="menu-items">
-                  <a href="#">Services</a>
+                  <a href="#" class="menu-items__link">Services</a>
                 </li>
                 <li class="menu-items">
-                  <a href="#">Project</a>
+                  <a href="#" class="menu-items__link">Project</a>
                 </li>
                 <li class="menu-items">
-                  <a href="#">Blog</a>
+                  <a href="#" class="menu-items__link">Blog</a>
                 </li>
                 <li class="menu-items">
-                  <a href="#">Contact</a>
+                  <a href="#" class="menu-items__link">Contact</a>
+                </li>
+                <li class="menu-items search-icon" id="search-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="23"
+                    height="24"
+                    viewBox="0 0 23 24"
+                    fill="none"
+                  >
+                    <g opacity="0.8">
+                      <path
+                        d="M16.6837 17.1844L21.9994 22.5001M19.375 10.6875C19.375 15.7616 15.2616 19.875 10.1875 19.875C5.11338 19.875 1 15.7616 1 10.6875C1 5.61338 5.11338 1.5 10.1875 1.5C15.2616 1.5 19.375 5.61338 19.375 10.6875Z"
+                        stroke="#141414"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </svg>
                 </li>
               </ul>
-              <div class="search-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="23"
-                  height="24"
-                  viewBox="0 0 23 24"
-                  fill="none"
-                >
-                  <g opacity="0.8">
-                    <path
-                      d="M16.6837 17.1844L21.9994 22.5001M19.375 10.6875C19.375 15.7616 15.2616 19.875 10.1875 19.875C5.11338 19.875 1 15.7616 1 10.6875C1 5.61338 5.11338 1.5 10.1875 1.5C15.2616 1.5 19.375 5.61338 19.375 10.6875Z"
-                      stroke="#141414"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                </svg>
+            </div>
+
+
+            <div id="search-menu">
+              <div class="wrapper">
+                <form id="form" action="#" method="">
+                  <input id="popup-search" type="text" name="u" placeholder="Enter Keyword to Search"/>
+                  <button id="popup-search-button" type="submit" name="search"><i class="ion-ios-search-strong"></i></button>
+                </form>
               </div>
             </div>
 
-            <img src="./assets/icons/hamburgermenu.png" alt="" class="hamburger" height="50px" width="50px">
+            <div class="mode-switcher">
+              <input type="checkbox" class="checkbox" id="checkbox">
+              <label for="checkbox" class="checkbox-label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <span class="ball"></span>
+              </label>
+            </div>
+
+            <div class="owl-gif">
+              <img src="./assets/images/owl-animated.gif" alt="" height="60px" width="60px">
+            </div>
+
+            <div class="sleep-gif">
+              <img src="./assets/images/sleep-gif.gif" alt="" height="60px" width="60px">
+            </div>
+
+            <!-- <img src="./assets/icons/hamburgermenu.png" alt="" class="hamburger" height="50px" width="50px"> -->
             <!-- Primary Menu End. -->
           </div>
         </nav>
@@ -79,12 +140,19 @@
         <div class="container">
           <div class="banner-text-box">
             <div class="banner-inner-text">
-              <h1>Let Your Home Be Unique</h1>
-              <p>
+              <h1 data-aos="fade-up" data-aos-duration="1000">
+                Let Your Home Be Unique
+              </h1>
+              <p data-aos="fade-up" data-aos-duration="2000">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Perferendis, nemo.
               </p>
-              <a href="#" class="get-started flex-center">
+              <a
+                href="#"
+                class="get-started flex-center"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
                 Get Started
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -108,15 +176,18 @@
       </div>
       <!-- Banner End. -->
       <div class="container">
-
         <!-- Services Section Start. -->
         <section class="services">
           <div class="services-container">
             <div class="services-item-box flex-center">
-              <div class="services-inner-item-box">
+              <div
+                class="services-inner-item-box"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <h4>Project Plan</h4>
                 <p>
-                  There are many variations of the passages of lorem Ipsum from 
+                  There are many variations of the passages of lorem Ipsum from
                   available, majority.
                 </p>
                 <a href="#" class="read-more">
@@ -138,10 +209,14 @@
                   </svg>
                 </a>
               </div>
-              <div class="services-inner-item-box">
+              <div
+                class="services-inner-item-box"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
                 <h4>Interior Work</h4>
                 <p>
-                  There are many variations of the passages of lorem Ipsum from 
+                  There are many variations of the passages of lorem Ipsum from
                   available, majority.
                 </p>
                 <a href="#" class="read-more">
@@ -163,10 +238,14 @@
                   </svg>
                 </a>
               </div>
-              <div class="services-inner-item-box">
+              <div
+                class="services-inner-item-box"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
                 <h4>Realization</h4>
                 <p>
-                  There are many variations of the passages of lorem Ipsum from 
+                  There are many variations of the passages of lorem Ipsum from
                   available, majority.
                 </p>
                 <a href="#" class="read-more">
@@ -197,13 +276,19 @@
         <section class="estimate flex-wrap">
           <div class="estimate-text-box">
             <div class="estimate-inner-text-box flex-column">
-              <h2>We Create The Art Of Stylish Living Stylishly</h2>
-              <p>
+              <h2 data-aos="fade-up" data-aos-duration="1000">
+                We Create The Art Of Stylish Living Stylishly
+              </h2>
+              <p data-aos="fade-up" data-aos-duration="2000">
                 It is a long established fact that a reader will be distracted
                 by the of readable content of a page when lookings at its
                 layouts the points of using that it has a more-or-less normal
               </p>
-              <div class="contact flex-column">
+              <div
+                class="contact flex-column"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
                 <div class="contact-details flex-wrap">
                   <a href="tel: (123) 456 - 7890">
                     <svg
@@ -248,7 +333,7 @@
               </div>
             </div>
           </div>
-          <div class="product">
+          <div class="product" data-aos="fade-up" data-aos-duration="3000">
             <img src="./assets/images/art1.png" alt="Product" />
           </div>
         </section>
@@ -256,15 +341,15 @@
 
         <!-- Testimonial Section Start. -->
         <section class="testimonials-wrap">
-          <div class="testimonials-inner flex-column flex-center">
+          <div class="testimonials-inner">
             <h2>What the People Thinks About Us</h2>
-            <div class="card-deck flex-wrap">
+            <div class="card-deck">
               <div class="card">
                 <div class="card-inner">
                   <div class="person">
                     <div class="crop">
                       <img
-                        src="./assets/images/dp1.png"
+                        src="./assets/images/h1.jpg"
                         alt=""
                         class="profile"
                       />
@@ -287,7 +372,7 @@
                   <div class="person">
                     <div class="crop">
                       <img
-                        src="./assets/images/dp2.png"
+                        src="./assets/images/h4.jpeg"
                         alt=""
                         class="profile"
                       />
@@ -310,7 +395,7 @@
                   <div class="person">
                     <div class="crop">
                       <img
-                        src="./assets/images/dp3.png"
+                        src="./assets/images/h3.jpg"
                         alt=""
                         class="profile"
                       />
@@ -336,11 +421,41 @@
         <!-- Clients Section Start. -->
         <section class="clients-wrap">
           <div class="clients flex-wrap">
-            <a href="#"><img src="./assets/icons/01.svg" alt="" /></a>
-            <a href="#"><img src="./assets/icons/02.svg" alt="" /></a>
-            <a href="#"><img src="./assets/icons/03.svg" alt="" /></a>
-            <a href="#"><img src="./assets/icons/04.svg" alt="" /></a>
-            <a href="#"><img src="./assets/icons/05.svg" alt="" /></a>
+            <a href="#"
+              ><img
+                src="./assets/icons/01.svg"
+                alt=""
+                data-aos="fade-up"
+                data-aos-duration="400"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/icons/02.svg"
+                alt=""
+                data-aos="fade-up"
+                data-aos-duration="500"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/icons/03.svg"
+                alt=""
+                data-aos="fade-up"
+                data-aos-duration="1000"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/icons/04.svg"
+                alt=""
+                data-aos="fade-up"
+                data-aos-duration="2000"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/icons/05.svg"
+                alt=""
+                data-aos="fade-up"
+                data-aos-duration="3000"
+            /></a>
           </div>
         </section>
         <!-- Clients Section End. -->
@@ -357,7 +472,12 @@
           <div class="projects-wrap">
             <div class="project-child-block flex-column">
               <div class="section1 flex-wrap">
-                <div class="projects">
+                <div
+                  class="projects"
+                  data-aos="fade-up"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                >
                   <div class="projects-inner-box">
                     <img
                       src="./assets/images/picture2.png"
@@ -391,7 +511,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="projects">
+                <div
+                  class="projects"
+                  data-aos="fade-up"
+                  data-aos-offset="500"
+                  data-aos-easing="ease-in-sine"
+                >
                   <div class="projects-inner-box">
                     <img
                       src="./assets/images/picture3.png"
@@ -427,7 +552,12 @@
                 </div>
               </div>
               <div class="section2 flex-wrap">
-                <div class="projects">
+                <div
+                  class="projects"
+                  data-aos="fade-up"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                >
                   <div class="projects-inner-box">
                     <img
                       src="./assets/images/picture4.png"
@@ -461,7 +591,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="projects">
+                <div
+                  class="projects"
+                  data-aos="fade-up"
+                  data-aos-offset="500"
+                  data-aos-easing="ease-in-sine"
+                >
                   <div class="projects-inner-box">
                     <img
                       src="./assets/images/picture5.png"
@@ -508,25 +643,25 @@
           <div class="facts-box flex-center">
             <div class="facts-inner-box flex-column flex-center">
               <div class="counts">
-                <h1>12</h1>
+                <h1 class="counter">12</h1>
                 <p class="fact">Years Of Experiance</p>
               </div>
             </div>
             <div class="facts-inner-box flex-column flex-center">
               <div class="counts">
-                <h1>12</h1>
+                <h1 class="counter">12</h1>
                 <p class="fact">Years Of Experiance</p>
               </div>
             </div>
             <div class="facts-inner-box flex-column flex-center">
               <div class="counts">
-                <h1>12</h1>
+                <h1 class="counter">12</h1>
                 <p class="fact">Years Of Experiance</p>
               </div>
             </div>
             <div class="facts-inner-box flex-column flex-center">
               <div class="counts">
-                <h1>12</h1>
+                <h1 class="counter">12</h1>
                 <p class="fact">Years Of Experiance</p>
               </div>
             </div>
@@ -535,9 +670,7 @@
       </div>
       <!-- Facts Section End. -->
 
-
       <div class="container">
-
         <!-- Article Section Start. -->
         <section class="articles-wrap flex-wrap flex-center flex-column">
           <div class="articles-header">
@@ -549,7 +682,12 @@
             </p>
           </div>
           <div class="articles-box flex-wrap">
-            <div class="articles-inner-box flex-column">
+            <div
+              class="articles-inner-box flex-column"
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div class="articles-image">
                 <img
                   src="./assets/images/art1.png"
@@ -584,7 +722,12 @@
                 </a>
               </div>
             </div>
-            <div class="articles-inner-box flex-column selected">
+            <div
+              class="articles-inner-box flex-column selected"
+              data-aos="fade-up"
+              data-aos-offset="500"
+              data-aos-easing="ease-in-sine"
+            >
               <div class="articles-image">
                 <img
                   src="./assets/images/art2.png"
@@ -619,7 +762,12 @@
                 </a>
               </div>
             </div>
-            <div class="articles-inner-box flex-column">
+            <div
+              class="articles-inner-box flex-column"
+              data-aos="fade-up"
+              data-aos-offset="600"
+              data-aos-easing="ease-in-sine"
+            >
               <div class="articles-image">
                 <img
                   src="./assets/images/adrt3.png"
@@ -695,7 +843,7 @@
           <div class="brand-info">
             <div class="branding flex-wrap flex-center">
               <a href="#" class="brand flex-wrap flex-center">
-                <img src="./assets/icons/Logo.svg" alt="">
+                <img src="./assets/icons/Logo.svg" alt="" />
               </a>
             </div>
             <p class="slogan">
@@ -712,34 +860,81 @@
             <!-- Social Icons End. -->
           </div>
 
-          <!-- Footer Navigation Start. -->
-          <div class="pages">
-            <h4>Pages</h4>
-            <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Our Projects</a></li>
-              <li><a href="#">Out Team</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Services</a></li>
-            </ul>
+          <div class="footer-nav">
+            <!-- Footer Navigation Start. -->
+            <div class="pages">
+              <h4>Pages</h4>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Projects</a></li>
+                <li><a href="#">Out Team</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Services</a></li>
+              </ul>
+            </div>
+            <div class="footer-services">
+              <h4>Services</h4>
+              <ul>
+                <li><a href="#">Kitchen</a></li>
+                <li><a href="#">Living Area</a></li>
+                <li><a href="#">Bathroom</a></li>
+                <li><a href="#">Dining Hall</a></li>
+                <li><a href="#">Bedroom</a></li>
+              </ul>
+            </div>
+            <!-- Footer Navigation End. -->
+            <div class="footer-contact">
+              <h4>Contact</h4>
+              <address>55 East Birchwood Ave. Brooklyn, New York 11201</address>
+              <a href="mailto: contact@interno.com">contact@interno.com</a>
+              <br />
+              <a href="tel: (123)456-7890">(123) 456 - 7890</a>
+            </div>
           </div>
-          <div class="footer-services">
-            <h4>Services</h4>
-            <ul>
-              <li><a href="#">Kitchen</a></li>
-              <li><a href="#">Living Area</a></li>
-              <li><a href="#">Bathroom</a></li>
-              <li><a href="#">Dining Hall</a></li>
-              <li><a href="#">Bedroom</a></li>
+
+          <div class="accordion-block">
+            <ul id="accordion" class="accordion">
+              <li>
+                <div class="link pages">
+                  <h4>Pages</h4>
+                  <i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Our Projects</a></li>
+                  <li><a href="#">Out Team</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Services</a></li>
+                </ul>
+              </li>
+              <li>
+                <div class="link footer-services">
+                  <h4>Services</h4>
+                  <i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu">
+                  <li><a href="#">Kitchen</a></li>
+                  <li><a href="#">Living Area</a></li>
+                  <li><a href="#">Bathroom</a></li>
+                  <li><a href="#">Dining Hall</a></li>
+                  <li><a href="#">Bedroom</a></li>
+                </ul>
+              </li>
+              <li>
+                <div class="link footer-contact">
+                  <h4>Contact</h4>
+                  <i class="fa fa-chevron-down"></i>
+                </div>
+                <ul class="submenu">
+                  <address>
+                    55 East Birchwood Ave. Brooklyn, New York 11201
+                  </address>
+                  <a href="mailto: contact@interno.com">contact@interno.com</a>
+                  <br />
+                  <a href="tel: (123)456-7890">(123) 456 - 7890</a>
+                </ul>
+              </li>
             </ul>
-          </div>
-          <!-- Footer Navigation End. -->
-          <div class="footer-contact">
-            <h4>Contact</h4>
-            <address>55 East Birchwood Ave. Brooklyn, New York 11201</address>
-            <a href="mailto: contact@interno.com">contact@interno.com</a>
-            <br />
-            <a href="tel: (123)456-7890">(123) 456 - 7890</a>
           </div>
         </section>
       </div>
@@ -755,9 +950,16 @@
       <!-- Copyright Section End. -->
     </footer>
     <!-- Footer Region End. -->
+
+    <script>
+      AOS.init();
+    </script>
+    <script src="./js/menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+    <script src="./js/counter.js"></script>
   </body>
 </html>
-
 <script
   src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/fontawesome.min.js"
   integrity="sha512-64O4TSvYybbO2u06YzKDmZfLj/Tcr9+oorWhxzE3yDnmBRf7wvDgQweCzUf5pm2xYTgHMMyk5tW8kWU92JENng=="

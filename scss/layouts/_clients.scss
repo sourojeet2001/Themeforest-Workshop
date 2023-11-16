@@ -4,4 +4,13 @@
 }
 .clients {
   align-items: center;
+
+  img {
+    object-fit: contain;
+  }
+}
+
+.clients a:hover {
+  transition: 0.9s all ease-in-out;
+  transform: scale(1.3);
 }

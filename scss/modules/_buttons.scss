@@ -1,4 +1,5 @@
 @use "../base/variables" as *;
+@use "../base/mixins" as *;
 
 .get-started {
   width: 219.141px;
@@ -18,4 +19,19 @@
   display: flex;
   align-items: $center-alignment;
   text-align: $center-alignment;
+  transition: all 0.5s ease;
+
+  &:hover {
+    @include btn-hover
+  }
+
+  // &::before {
+  //   transform-origin: right top;
+  //   transform: scale(0, 1);
+  // }
+
+  // &:hover::before {
+  // transform-origin: left top;
+  // transition: 0.5s all ease-in-out;
+  // }
 }

@@ -1,5 +1,6 @@
 @use "../base/base" as *;
 @use "../base/variables" as *;
+@use "../base/mixins" as *;
 
 .primary-navbar {
   padding: 32px 0;
@@ -20,6 +21,10 @@
   list-style: none;
   a {
     padding: 24px;
+
+    &:hover {
+    @include link-hover
+    }
   }
 }
 
@@ -30,7 +35,11 @@
   opacity: 0.8;
   padding-left: 12px;
 }
-
-.hamburger {
+.menu-btn {
   display: none;
 }
+
+.sm-nav .mode-switcher {
+  display: none;
+}
+

@@ -8,13 +8,23 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-body{
-  background: linear-gradient(to right, #E6E6E6 1px, transparent 1px);
-  background-size: 366px;
+// body{
+//   background: linear-gradient(to right, #E6E6E6 1px, transparent 1px);
+//   background-size: 366px;
+// }
+header {
+  position: sticky;
+  top: 0;
+  background: white;
+  box-shadow: 0 0 60px 0 rgba(0,0,0,0.1);
+  z-index: 999;
+}
+img {
+  object-fit: cover;
 }
 .container {
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 16px;
   max-width: 1200px;
 }
 
@@ -61,3 +71,8 @@ a {
   font-weight: $anchor-font-weight;
 }
 
+// @mixin media-md {
+//   @media screen and (max-width: 768px) {
+//     @content;
+//   }
+// }

@@ -1,3 +1,5 @@
+@use "../base/mixins" as *;
+
 .articles-header {
   padding: 26px 20%;
   text-align: center;
@@ -29,14 +31,18 @@
   border-bottom-left-radius: 48px;
   border-bottom-right-radius: 48px;
   padding: 20px;
+
+  &:hover {
+    @include articles-hover
+  }
 }
 
-.selected {
-  background: #f4f0ec;
-}
-.selected .other-details svg > circle {
-  fill: white;
-}
+// .selected {
+//   background: #f4f0ec;
+// }
+// .selected .other-details svg > circle {
+//   fill: white;
+// }
 
 .other-details {
   padding-top: 32px;
