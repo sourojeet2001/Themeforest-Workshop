@@ -653,16 +653,6 @@
 @media screen and (max-width: 768px) {
   @include nav-slider;
 
-  nav .mode-switcher {
-    display: none;
-  }
-
-  .sm-nav .mode-switcher {
-    display: inline-block;
-    position: absolute;
-    right: 64px;
-    bottom: 26px;
-  }
   .hero-banner {
     height: calc(100dvh - 68px);
   }
@@ -1017,9 +1007,6 @@
   .logo {
     height: 32px;
     text-align: center;
-  }
-  .sm-nav .mode-switcher {
-    bottom: 22px;
   }
   .hero-banner {
     height: calc(100dvh - 64px);

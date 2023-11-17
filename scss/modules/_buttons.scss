@@ -24,14 +24,4 @@
   &:hover {
     @include btn-hover
   }
-
-  // &::before {
-  //   transform-origin: right top;
-  //   transform: scale(0, 1);
-  // }
-
-  // &:hover::before {
-  // transform-origin: left top;
-  // transition: 0.5s all ease-in-out;
-  // }
 }

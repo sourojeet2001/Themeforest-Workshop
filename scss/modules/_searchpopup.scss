@@ -9,15 +9,6 @@ $white: #fff;
   transition: $time $timing all;
 }
 
-// body {
-//   background-color: #212121;
-//   background-image: url("http://wallpanda.com/wp-content/uploads/2015/05/Hd-backgrounds-premium-widescreen-hd-4-backgrounds-for-free-download-hd.jpg");
-//   background-position: center top;
-//   background-repeat: no-repeat;
-//   background-size: 100% auto;
-//   font-family: "Open Sans", sans-serif;
-// }
-
 #search-menu {
   position: fixed;
   width: 100%;
@@ -117,16 +108,3 @@ $white: #fff;
     }
   }
 }
-
-// #search-icon {
-//   // padding: 0 $size / 2 $size / 4 $size / 2;
-//   font-size: $size * 5;
-//   cursor: pointer;
-//   color: darken($white, 25%);
-//   text-align: center;
-//   @include transition(500ms, $timing);
-
-//   &:hover {
-//     color: $white;
-//   }
-// }
