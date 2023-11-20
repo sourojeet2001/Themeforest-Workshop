@@ -1,0 +1,29 @@
+@use "../base/base" as *;
+@use "../base/mixins" as *;
+
+
+// Responsive for small laptop.
+@media screen and (max-width: 1080px) {
+  .articles-box {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .articles-inner-box {
+    width: 47%;
+
+    &:last-child:nth-child(odd) {
+      margin: 0 auto;
+    }
+  }
+  .facts-inner-box {
+    margin: 0px 2px;
+  }
+
+  .product {
+    max-height: 600px;
+    img {
+      height: 100%;
+      border-radius: 0 142px 0 98px;
+    }
+  }
+}

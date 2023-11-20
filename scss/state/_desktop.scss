@@ -1,0 +1,146 @@
+@use "../base/base" as *;
+@use "../base/mixins" as *;
+
+// Responsive Desktop. 
+@media screen and (max-width: 1600px) {
+  .container {
+    max-width: 1000px;
+  }
+  .menu-item-list a {
+    padding: 18px;
+  }
+  .flex-wrap {
+    flex-wrap: nowrap;
+  }
+  h1 {
+    font-size: 74px;
+    line-height: 90px;
+  }
+  h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  h2 {
+    font-size: 40px;
+    line-height: 56px;
+  }
+  p{
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .hero-banner {
+    height: calc(100dvh - 124px);
+  }
+  .get-started {
+    width: 33%;
+    padding: 20px 24px;
+    font-size: 16px;
+  }
+  .services-inner-item-box p {
+    padding-bottom: 36px;
+  }
+  .estimate-inner-text-box h2 {
+    padding-bottom: 24px;
+  }
+  .contact-details {
+    padding: 36px 0;
+    gap: 8px;
+
+    svg {
+      width: 75px;
+    }
+  }
+
+  .contact  .get-started {
+    width: 80%;
+    padding: 24px 16px;
+  }
+
+  .product {
+    max-height: 600px;
+
+    img {
+      border-radius: 0 230px 0 123px;
+      height: 100%;
+    }
+  }
+  .card-inner {
+    padding: 12px 0;
+    gap: 18px;
+    margin: 20px;
+  }
+  .person {
+    gap: 5px;
+
+    img {
+      height: 64px;
+      width: 64px;
+    }
+  }
+  .profile {
+    height: 80px;
+    width: 80px;
+  }
+  .project-header {
+    padding: 20px 20%;
+    margin: 64px 0;
+  }
+  .projects-inner-box img {
+    height: 400px;
+    width: 400px;
+  }
+  .section1, .section2 {
+    gap: 168px;
+  }
+
+  .facts-wrap {
+    margin: 60px 0;
+    margin-top: 96px;
+  }
+
+  .facts-inner-box {
+    margin: 0 10px;
+    padding-left: 18px;
+  }
+
+  .articles-header {
+    margin: 30px 0;
+    margin-top: 10px;
+  }
+  .articles-title {
+    line-height: 26px;
+  }
+  .articles-image {
+    margin-bottom: 18px;
+  }
+  .other-details {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 50px;
+  }
+
+  .contactus {
+    gap: 28px;
+    padding: 80px 265px;
+    margin: 36px 0;
+  }
+  .contact-btn {
+    padding: 24px 32px;
+  }
+
+  .social-icons {
+    padding-top: 24px;
+  }
+  .copyright {
+    margin-top: 80px;
+  }
+  .footer-region {
+    address {
+      font-size: 18px;
+    }
+    a {
+      line-height: 50px;
+      font-size: 18px;
+    }
+  }
+}

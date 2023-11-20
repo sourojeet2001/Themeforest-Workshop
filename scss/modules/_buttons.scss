@@ -25,3 +25,12 @@
     @include btn-hover
   }
 }
+
+.read-more {
+  &:hover {
+    svg {
+      transform: translateX(50%);
+      transition: 0.5s linear;
+    }
+  }
+}

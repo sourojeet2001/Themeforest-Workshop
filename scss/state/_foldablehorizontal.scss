@@ -1,0 +1,327 @@
+@use "../base/base" as *;
+@use "../base/mixins" as *;
+
+// Responsive for Galaxy Fold Horizontal.
+@media screen and (max-width: 720px) {
+  .container {
+    max-width: 600px;
+  }
+  // .primary-menu {
+  //   display: none;
+  // }
+  // .hamburger {
+  //   display: block;
+  //   height: 36px;
+  //   width: 36px;
+  // }
+  // .primary-navbar {
+  //   justify-content: space-between;
+  //   padding: 20px 0px;
+  // }
+  .logo {
+    height: 36px;
+    text-align: center;
+  }
+  .banner-text-box {
+    height: 84%;
+  }
+  .banner-inner-text {
+    width: 64%;
+    line-height: 28px;
+    
+    p {
+      padding-bottom: 6px;
+    }
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  h1 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  h4 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  h2 {
+    font-size: 28px;
+    line-height: 38px;
+    padding-bottom: 10px;
+  }
+  p{
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .get-started {
+    width: 38%;
+    padding: 6px 0px;
+    font-size: 12px;
+  }
+  .services {
+    padding: 15% 72px;
+  }
+  .services-item-box {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .services-inner-item-box h4 {
+    padding-bottom: 12px;
+  }
+  .services-inner-item-box p {
+    padding-bottom: 12px;
+  }
+  .services-inner-item-box a {
+    font-size: 12px;
+  }
+  .estimate {
+    flex-direction: column-reverse;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .product {
+    width: 100%;
+    flex-basis: 0;
+    height: 270px;
+  }
+  .estimate-text-box {
+    width: 50%;
+    flex: 50%;
+    padding: 20px;
+  }
+  .estimate-inner-text-box {
+    margin-top: 32px;
+    h2 {
+      padding-bottom: 14px;
+    }
+  }
+  .contact-details {
+    padding: 8px 0;
+    gap: 8px;
+
+    svg {
+      width: 56px;
+    }
+  }
+
+  .contact  .get-started {
+    width: 80%;
+    padding: 14px 8px;
+  }
+  .contact-info h4 {
+    line-height: 18px;
+  }
+
+  .product {
+    height: 540px;
+  }
+
+  .testimonials-wrap {
+    margin: 80px 0;
+  }
+  .testimonials-inner {
+    padding: 26px 20px;
+    gap: 14px;
+
+    h2 {
+      width: 70%;
+      padding: 12px 17px;
+    }
+  }
+  .card-deck {
+    justify-content: center;
+  }
+  .card {
+    width: 96%;
+
+    p{
+      font-size: 16px;
+    }
+  }
+
+  .card-inner {
+    padding: 6px 20px;
+    gap: 8px;
+    margin: 16px;
+  }
+  .person {
+    gap: 10px;
+
+    img {
+      height: 70px;
+      width: 70px;
+    }
+  }
+
+  .personal-details {
+    h4 {
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+
+  .clients a {
+    width: 50%;
+
+    &:last-child:nth-child(odd) {
+      width: 100%;
+    }
+  }
+  
+
+  .clients img {
+    height: 80px;
+    width: 80px;
+  }
+  .section1, .section2 {
+    justify-content: center;
+  }
+  .project-header {
+    padding: 18px 72px;
+    margin: 32px 0;
+  }
+  .projects-inner-box {
+    img {
+      height: 400px;
+      width: 400px;
+    }
+  }
+  .project-details {
+    align-items: center;
+    margin: 0 10px;
+    svg {
+      width: 68px;
+      height: 52px;
+    }
+  }
+  .section1, .section2 {
+    gap: 60px;
+  }
+
+  .facts-box {
+    padding: 52px 0;
+  }
+  .facts-inner-box {
+    padding: 0 8px;
+    margin: 0;
+    p {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+  .articles-header {
+    margin: 12px 0;
+    margin-top: 0;
+    padding: 16px 21px;
+    h2 {
+      padding-bottom: 0;
+    }
+    p{
+      padding: 8px 0;
+      padding-top: 12px;
+    }
+  }
+  .articles-inner-box {
+    width: 84%;
+  }
+  .articles-box {
+    gap: 18px;
+    margin-bottom: 28px;
+    justify-content: center;
+    width: 64%;
+  }
+  .articles-image {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .article-title {
+    line-height: 26px;
+  }
+  .other-details {
+    padding-top: 14px;
+    padding-bottom: 10px;
+    justify-content: flex-start;
+    gap: 48px;
+
+    svg {
+      height: 42px;
+      width: 42px;
+    }
+  }
+  .publication-date {
+    font-size: 16px;
+  }
+
+  .contactus {
+    border-radius: 58px;
+    gap: 12px;
+    padding: 70px 16px;
+    margin: 16px 0;
+  }
+  .contact-btn {
+    padding: 14px 18px;
+    font-size: 12px;
+  }
+
+  .social-icons {
+    padding-top: 10px;
+    width: 54%;
+  }
+  .copyright {
+    margin-top: 40px;
+
+    p {
+      padding: 22px 0
+    }
+  }
+  .brand {
+    img {
+      height: 24px;
+      width: 100%;
+    }
+  }
+  .brand-info {
+    width: 42%;
+    padding-bottom: 20px;
+  }
+  .pages {
+    width: 47%;
+    padding-bottom: 20px;
+  }
+  .footer-services {
+    width: 42%;
+  }
+  .footer-contact {
+    width: 47%;
+  }
+  .slogan {
+    padding-top: 8px;
+  }
+  .footer-region {
+    padding: 0 73px;
+    margin: 80px auto;
+    address {
+      font-size: 12px;
+      padding-right: 40%;
+    }
+    a {
+      line-height: 22px;
+      font-size: 12px;
+    }
+  }
+  .copyright {
+    p {
+      padding: 16px 0;
+    }
+  }
+  @include nav-slider
+}
+
+// Responsive for Galaxy Fold Horizontal Flip Landscape Window.
+@media screen and (max-width: 653px) {
+  .hero-banner {
+    border-radius: 0 0 0 108px;
+  }
+  @include nav-slider
+}

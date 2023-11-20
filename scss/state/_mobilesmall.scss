@@ -1,0 +1,14 @@
+@use "../base/base" as *;
+@use "../base/mixins" as *;
+
+// Responsive for Mobile Small.
+@media screen and (max-width: 320px) {
+  .other-details {
+    gap: 30px;
+  }
+  @include nav-slider;
+
+  .facts-inner-box:nth-child(odd) {
+    border-right: none;
+  }
+}

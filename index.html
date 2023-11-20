@@ -5,6 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./dist/css/main.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="./dist/css/desktop.min.css"
+      media="screen and (max-width: 1600px)"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./dist/css/laptop.min.css"
+      media="screen and (max-width: 1200px)"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./dist/css/laptopsmall.min.css"
+      media="screen and (max-width: 1080px)"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./dist/css/tablet.min.css"
+      media="screen and (max-width: 992px)"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./dist/css/foldablehorizontal.min.css"
+      media="screen and (max-width: 720px)"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./dist/css/mobile.min.css"
+      media="screen and (max-width: 462px)"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./dist/css/mobilesmall.min.css"
+      media="screen and (max-width: 320px)"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./dist/css/foldablevertical.min.css"
+      media="screen and (max-width: 280px)"
+    />
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -33,9 +82,9 @@
     <header>
       <div class="container">
         <!-- Navigation Start. -->
-          <div class="menu-btn">
-            <span class="menu-btn__burger"> </span>
-          </div>
+        <div class="menu-btn">
+          <span class="menu-btn__burger"> </span>
+        </div>
         <nav>
           <div class="primary-navbar flex-wrap">
             <div class="brand-logo">
@@ -84,12 +133,18 @@
               </ul>
             </div>
 
-
             <div id="search-menu">
               <div class="wrapper">
-                <form id="form" action="#" method="">
-                  <input id="popup-search" type="text" name="u" placeholder="Enter Keyword to Search"/>
-                  <button id="popup-search-button" type="submit" name="search"><i class="ion-ios-search-strong"></i></button>
+                <form id="form" action="#" method="POST">
+                  <input
+                    id="popup-search"
+                    type="text"
+                    name="u"
+                    placeholder="Enter Keyword to Search"
+                  />
+                  <button id="popup-search-button" type="submit" name="search">
+                    <i class="ion-ios-search-strong"></i>
+                  </button>
                 </form>
               </div>
             </div>
@@ -181,7 +236,8 @@
               <div
                 class="services-inner-item-box"
                 data-aos="fade-up"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
+                data-aos-delay="300"
               >
                 <h4>Interior Work</h4>
                 <p>
@@ -210,7 +266,8 @@
               <div
                 class="services-inner-item-box"
                 data-aos="fade-up"
-                data-aos-duration="3000"
+                data-aos-duration="1000"
+                data-aos-delay="600"
               >
                 <h4>Realization</h4>
                 <p>
@@ -259,7 +316,7 @@
                 data-aos-duration="3000"
               >
                 <div class="contact-details flex-wrap">
-                  <a href="tel: (123) 456 - 7890">
+                  <a href="tel:(123)456-7890">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="93"
@@ -303,7 +360,7 @@
             </div>
           </div>
           <div class="product" data-aos="fade-up" data-aos-duration="3000">
-            <img src="./assets/images/art1.png" alt="Product" />
+            <img src="./assets/images/art1-min.webp" alt="Product" />
           </div>
         </section>
         <!-- Estimate Section End. -->
@@ -318,7 +375,7 @@
                   <div class="person">
                     <div class="crop">
                       <img
-                        src="./assets/images/h1.jpg"
+                        src="./assets/images/h1-min.webp"
                         alt=""
                         class="profile"
                       />
@@ -341,7 +398,7 @@
                   <div class="person">
                     <div class="crop">
                       <img
-                        src="./assets/images/h4.jpeg"
+                        src="./assets/images/h4-min.webp"
                         alt=""
                         class="profile"
                       />
@@ -364,7 +421,7 @@
                   <div class="person">
                     <div class="crop">
                       <img
-                        src="./assets/images/h3.jpg"
+                        src="./assets/images/h3-min.webp"
                         alt=""
                         class="profile"
                       />
@@ -387,7 +444,7 @@
                   <div class="person">
                     <div class="crop">
                       <img
-                        src="./assets/images/h1.jpg"
+                        src="./assets/images/h1-min.webp"
                         alt=""
                         class="profile"
                       />
@@ -410,7 +467,7 @@
                   <div class="person">
                     <div class="crop">
                       <img
-                        src="./assets/images/h4.jpeg"
+                        src="./assets/images/h4-min.webp"
                         alt=""
                         class="profile"
                       />
@@ -433,7 +490,7 @@
                   <div class="person">
                     <div class="crop">
                       <img
-                        src="./assets/images/h3.jpg"
+                        src="./assets/images/h3-min.webp"
                         alt=""
                         class="profile"
                       />
@@ -510,15 +567,10 @@
           <div class="projects-wrap">
             <div class="project-child-block flex-column">
               <div class="section1 flex-wrap">
-                <div
-                  class="projects"
-                  data-aos="fade-up"
-                  data-aos-offset="300"
-                  data-aos-easing="ease-in-sine"
-                >
+                <div class="projects" data-aos="fade-up" data-aos-delay="0">
                   <div class="projects-inner-box">
                     <img
-                      src="./assets/images/picture2.png"
+                      src="./assets/images/picture2-min.webp"
                       alt=""
                       height="500px"
                       width="500px"
@@ -549,15 +601,10 @@
                     </div>
                   </div>
                 </div>
-                <div
-                  class="projects"
-                  data-aos="fade-up"
-                  data-aos-offset="500"
-                  data-aos-easing="ease-in-sine"
-                >
+                <div class="projects" data-aos="fade-up" data-aos-delay="300">
                   <div class="projects-inner-box">
                     <img
-                      src="./assets/images/picture3.png"
+                      src="./assets/images/picture3-min.webp"
                       alt=""
                       height="500px"
                       width="500px"
@@ -590,15 +637,10 @@
                 </div>
               </div>
               <div class="section2 flex-wrap">
-                <div
-                  class="projects"
-                  data-aos="fade-up"
-                  data-aos-offset="300"
-                  data-aos-easing="ease-in-sine"
-                >
+                <div class="projects" data-aos="fade-up" data-aos-delay="0">
                   <div class="projects-inner-box">
                     <img
-                      src="./assets/images/picture4.png"
+                      src="./assets/images/picture4-min.webp"
                       alt=""
                       height="500px"
                       width="500px"
@@ -629,15 +671,10 @@
                     </div>
                   </div>
                 </div>
-                <div
-                  class="projects"
-                  data-aos="fade-up"
-                  data-aos-offset="500"
-                  data-aos-easing="ease-in-sine"
-                >
+                <div class="projects" data-aos="fade-up" data-aos-delay="300">
                   <div class="projects-inner-box">
                     <img
-                      src="./assets/images/picture5.png"
+                      src="./assets/images/picture5-min.webp"
                       alt=""
                       height="500px"
                       width="500px"
@@ -723,15 +760,14 @@
             <div
               class="articles-inner-box flex-column"
               data-aos="fade-up"
-              data-aos-offset="300"
               data-aos-easing="ease-in-sine"
             >
               <div class="articles-image">
                 <img
-                  src="./assets/images/art1.png"
+                  src="./assets/images/art1-min.webp"
                   alt=""
-                  height="29.9375rem"
-                  width="21.25rem"
+                  height="479px"
+                  width="340px"
                 />
                 <p class="article-category">Kitchen Design</p>
               </div>
@@ -763,15 +799,14 @@
             <div
               class="articles-inner-box flex-column selected"
               data-aos="fade-up"
-              data-aos-offset="500"
               data-aos-easing="ease-in-sine"
             >
               <div class="articles-image">
                 <img
-                  src="./assets/images/art2.png"
+                  src="./assets/images/art2-min.webp"
                   alt=""
-                  height="29.9375rem"
-                  width="21.25rem"
+                  height="479px"
+                  width="340px"
                 />
                 <p class="article-category">Kitchen Design</p>
               </div>
@@ -803,15 +838,14 @@
             <div
               class="articles-inner-box flex-column"
               data-aos="fade-up"
-              data-aos-offset="600"
               data-aos-easing="ease-in-sine"
             >
               <div class="articles-image">
                 <img
-                  src="./assets/images/adrt3.png"
+                  src="./assets/images/adrt3-min.webp"
                   alt=""
-                  height="29.9375rem"
-                  width="21.25rem"
+                  height="479px"
+                  width="340px"
                 />
                 <p class="article-category">Kitchen Design</p>
               </div>
@@ -924,13 +958,13 @@
             <div class="footer-contact">
               <h4>Contact</h4>
               <address>55 East Birchwood Ave. Brooklyn, New York 11201</address>
-              <a href="mailto: contact@interno.com">contact@interno.com</a>
+              <a href="mailto:contact@interno.com">contact@interno.com</a>
               <br />
-              <a href="tel: (123)456-7890">(123) 456 - 7890</a>
+              <a href="tel:(123)456-7890">(123) 456 - 7890</a>
             </div>
           </div>
 
-          <div class="accordion-block">
+          <!-- <div class="accordion-block">
             <ul id="accordion" class="accordion">
               <li>
                 <div class="link pages">
@@ -969,11 +1003,11 @@
                   </address>
                   <a href="mailto: contact@interno.com">contact@interno.com</a>
                   <br />
-                  <a href="tel: (123)456-7890">(123) 456 - 7890</a>
+                  <a href="tel:(123)456-7890">(123) 456 - 7890</a>
                 </ul>
               </li>
             </ul>
-          </div>
+          </div> -->
         </section>
       </div>
       <!-- Copyright Section Start. -->
@@ -993,8 +1027,24 @@
       AOS.init();
     </script>
     <script src="./js/menu.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    <script src="jquery.counterup.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"
+      integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+      integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./js/counter.js"></script>
   </body>
 </html>
