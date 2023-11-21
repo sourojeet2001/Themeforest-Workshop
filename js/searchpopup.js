@@ -1,7 +1,7 @@
 $(function() {
 	$('#search-menu').removeClass('toggled');
 
-	$('#search-icon').click(function(e) {
+	$('.search-icon').click(function(e) {
 		e.stopPropagation();
 		$('#search-menu').toggleClass('toggled');
 		$("#popup-search").focus();

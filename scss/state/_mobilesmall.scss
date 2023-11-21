@@ -3,10 +3,34 @@
 
 // Responsive for Mobile Small.
 @media screen and (max-width: 320px) {
+  .primary-menu .search-icon {
+    display: none;
+  }
+
+  .search-icon-sm {
+    display: block !important;
+    position: absolute;
+    right: 63px;
+    top: 14px;
+    width: 26px;
+    height: 4px;
+  }
+
+  #search-menu {
+    height: 12%;
+    .wrapper {
+      margin: 2em auto 0 auto;
+      input {
+        font-size: 26px;
+      }
+    }
+  } 
+  
+  @include nav-slider;
+  
   .other-details {
     gap: 30px;
   }
-  @include nav-slider;
 
   .facts-inner-box:nth-child(odd) {
     border-right: none;

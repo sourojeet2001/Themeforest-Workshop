@@ -4,6 +4,17 @@ cleanCSS = require('gulp-clean-css');
 rename = require('gulp-rename');
 const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
+const svgSprite = require('gulp-svg-sprite');
+
+var config = {
+  mode: {
+    css: { // Activate the «css» mode
+      render: {
+        css: true // Activate CSS output (with default options)
+      }
+    }
+  }
+};
 
 var paths = {
   styles: {
@@ -34,9 +45,16 @@ function watch() {
   gulp.watch(paths.styles.src, styles);
 }
 
+function sprites() {
+  return gulp.src('./assets/icons/brands/*.svg')
+  .pipe(svgSprite(config))
+  .pipe(gulp.dest('./assets/icons/'));
+}
+
 var build = gulp.series(gulp.parallel(styles));
 exports.styles = styles;
 exports.watch = watch;
+exports.sprites = sprites;
 exports.build = build;
 
 /*

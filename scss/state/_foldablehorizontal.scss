@@ -6,6 +6,28 @@
   .container {
     max-width: 600px;
   }
+  .primary-menu .search-icon {
+    display: none;
+  }
+
+  .search-icon-sm {
+    display: block !important;
+    position: absolute;
+    right: 63px;
+    top: 14px;
+    width: 26px;
+    height: 4px;
+  }
+
+  #search-menu {
+    height: 12%;
+    .wrapper {
+      margin: 2em auto 0 auto;
+      input {
+        font-size: 26px;
+      }
+    }
+  } 
   // .primary-menu {
   //   display: none;
   // }

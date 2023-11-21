@@ -12,7 +12,7 @@ $white: #fff;
 #search-menu {
   position: fixed;
   width: 100%;
-  height: $size * 20;
+  height: 25%;
   top: -$size * 20;
   left: 0;
   right: 0;
@@ -78,7 +78,7 @@ $white: #fff;
       background: transparent;
       border: none;
       border-bottom: 3px solid darken($white, 25%);
-      font-size: $size * 4;
+      font-size: 32px;
       color: darken($white, 25%);
 
       &:focus {
