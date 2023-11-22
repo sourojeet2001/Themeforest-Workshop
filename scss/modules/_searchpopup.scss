@@ -72,6 +72,10 @@ $white: #fff;
     margin: $size * 3 auto 0 auto;
     padding: 0 $size;
 
+    label {
+      display: none;
+    }
+
     input {
       width: 90%;
       // padding: 0 0 $size / 8 0;

@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Interno</title>
+    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico" />
     <link
       rel="preload"
       as="font"
       href="./vendor/DM_Serif_Display/DMSerifDisplay-Regular.ttf"
       type="font/ttf"
       crossorigin="anonymous"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
     <link
       rel="preload"
@@ -17,8 +19,14 @@
       href="./vendor/Jost/static/Jost-Regular.ttf"
       type="font/ttf"
       crossorigin="anonymous"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
-    <link rel="preload" as="style" href="./dist/css/critical.min.css" />
+    <link
+      rel="preload"
+      as="style"
+      href="./dist/css/critical.min.css"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
     <link rel="stylesheet" href="./dist/css/main.min.css" />
     <link
       rel="stylesheet"
@@ -61,15 +69,9 @@
       media="screen and (max-width: 280px)"
     />
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
-    />
+    <link rel="stylesheet" href="./dist/css/aos/aos.min.css" />
+    <link rel="stylesheet" href="./dist/css/slick/slick.min.css" />
+    <link rel="stylesheet" href="./dist/css/slick/slick-theme.min.css" />
   </head>
   <body>
     <!-- Header Start. -->
@@ -79,7 +81,7 @@
         <div class="menu-btn">
           <span class="menu-btn__burger"> </span>
         </div>
-        <div class="search-icon search-icon-sm" id="search-icon">
+        <div class="search-icon search-icon-sm">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="23"
@@ -101,7 +103,11 @@
         <nav>
           <div class="primary-navbar flex-wrap">
             <div class="brand-logo">
-              <img src="./assets/icons/Logo.svg" alt="" class="logo" />
+              <img
+                src="./assets/icons/Logo.svg"
+                alt="brand-logo"
+                class="logo"
+              />
             </div>
             <!-- Primary Menu Start. -->
             <div class="primary-menu flex-center">
@@ -124,7 +130,7 @@
                 <li class="menu-items">
                   <a href="#" class="menu-items__link">Contact</a>
                 </li>
-                <!-- <li class="menu-items search-icon" id="search-icon">
+                <li class="menu-items search-icon">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="23"
@@ -142,40 +148,33 @@
                       />
                     </g>
                   </svg>
-                </li> -->
+                </li>
               </ul>
-              <div class="search-icon" id="search-icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="23"
-                  height="24"
-                  viewBox="0 0 23 24"
-                  fill="none"
-                >
-                  <g opacity="0.8">
-                    <path
-                      d="M16.6837 17.1844L21.9994 22.5001M19.375 10.6875C19.375 15.7616 15.2616 19.875 10.1875 19.875C5.11338 19.875 1 15.7616 1 10.6875C1 5.61338 5.11338 1.5 10.1875 1.5C15.2616 1.5 19.375 5.61338 19.375 10.6875Z"
-                      stroke="#141414"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                </svg>
-              </div>
             </div>
 
             <div id="search-menu">
               <div class="wrapper">
                 <form id="form" action="#" method="POST">
+                  <label for="popup-search">Search Now</label>
                   <input
                     id="popup-search"
                     type="text"
-                    name="u"
+                    name="popup-search"
                     placeholder="Enter Keyword to Search"
+                    title="Enter Keyword"
                   />
-                  <button id="popup-search-button" type="submit" name="search">
-                    <i class="ion-ios-search-strong"></i>
+                  <button
+                    id="popup-search-button"
+                    type="submit"
+                    name="search"
+                    value="search"
+                    class="popup-btn"
+                    title="Search Now"
+                  >
+                    <i
+                      class="fa-solid fa-magnifying-glass"
+                      style="color: #ededed"
+                    ></i>
                   </button>
                 </form>
               </div>
@@ -348,7 +347,7 @@
                 data-aos-duration="3000"
               >
                 <div class="contact-details flex-wrap">
-                  <a href="tel:(123)456-7890">
+                  <a href="tel:(123)456-7890" title="Call Now">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="93"
@@ -408,7 +407,7 @@
                     <div class="crop">
                       <img
                         src="./assets/images/h1-min.webp"
-                        alt=""
+                        alt="headshot1"
                         class="profile"
                       />
                     </div>
@@ -431,7 +430,7 @@
                     <div class="crop">
                       <img
                         src="./assets/images/h4-min.webp"
-                        alt=""
+                        alt="headshot2"
                         class="profile"
                       />
                     </div>
@@ -454,7 +453,7 @@
                     <div class="crop">
                       <img
                         src="./assets/images/h3-min.webp"
-                        alt=""
+                        alt="headshot3"
                         class="profile"
                       />
                     </div>
@@ -477,7 +476,7 @@
                     <div class="crop">
                       <img
                         src="./assets/images/h1-min.webp"
-                        alt=""
+                        alt="headshot4"
                         class="profile"
                       />
                     </div>
@@ -500,7 +499,7 @@
                     <div class="crop">
                       <img
                         src="./assets/images/h4-min.webp"
-                        alt=""
+                        alt="headshot5"
                         class="profile"
                       />
                     </div>
@@ -523,7 +522,7 @@
                     <div class="crop">
                       <img
                         src="./assets/images/h3-min.webp"
-                        alt=""
+                        alt="headshot6"
                         class="profile"
                       />
                     </div>
@@ -551,14 +550,14 @@
             <a href="#"
               ><img
                 src="./assets/icons/01.svg"
-                alt=""
+                alt="client1"
                 data-aos="fade-up"
                 data-aos-duration="1000"
             /></a>
             <a href="#"
               ><img
                 src="./assets/icons/02.svg"
-                alt=""
+                alt="client2"
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="200"
@@ -566,7 +565,7 @@
             <a href="#"
               ><img
                 src="./assets/icons/03.svg"
-                alt=""
+                alt="client3"
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="400"
@@ -574,7 +573,7 @@
             <a href="#"
               ><img
                 src="./assets/icons/04.svg"
-                alt=""
+                alt="client4"
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="600"
@@ -582,7 +581,7 @@
             <a href="#"
               ><img
                 src="./assets/icons/05.svg"
-                alt=""
+                alt="client5"
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="800"
@@ -607,7 +606,7 @@
                   <div class="projects-inner-box">
                     <img
                       src="./assets/images/picture2-min.webp"
-                      alt=""
+                      alt="product1"
                       height="500"
                       width="500"
                     />
@@ -616,7 +615,7 @@
                         <h4>Modern Kitchen</h4>
                         <p>Decor/Architecture</p>
                       </div>
-                      <a href="#">
+                      <a href="#" title="Learn More">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="70"
@@ -641,7 +640,7 @@
                   <div class="projects-inner-box">
                     <img
                       src="./assets/images/picture3-min.webp"
-                      alt=""
+                      alt="product2"
                       height="500"
                       width="500"
                     />
@@ -650,7 +649,7 @@
                         <h4>Modern Kitchen</h4>
                         <p>Decor/Architecture</p>
                       </div>
-                      <a href="#">
+                      <a href="#" title="Learn More">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="70"
@@ -677,7 +676,7 @@
                   <div class="projects-inner-box">
                     <img
                       src="./assets/images/picture4-min.webp"
-                      alt=""
+                      alt="product3"
                       height="500"
                       width="500"
                     />
@@ -686,7 +685,7 @@
                         <h4>Modern Kitchen</h4>
                         <p>Decor/Architecture</p>
                       </div>
-                      <a href="#">
+                      <a href="#" title="Learn More">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="70"
@@ -711,7 +710,7 @@
                   <div class="projects-inner-box">
                     <img
                       src="./assets/images/picture5-min.webp"
-                      alt=""
+                      alt="product4"
                       height="500"
                       width="500"
                     />
@@ -720,7 +719,7 @@
                         <h4>Modern Kitchen</h4>
                         <p>Decor/Architecture</p>
                       </div>
-                      <a href="#">
+                      <a href="#" title="Learn More">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="70"
@@ -801,7 +800,7 @@
               <div class="articles-image">
                 <img
                   src="./assets/images/art1-min.webp"
-                  alt=""
+                  alt="kitchen1"
                   height="479"
                   width="340"
                 />
@@ -812,7 +811,7 @@
               </h4>
               <div class="other-details flex-center">
                 <p class="publication-date">26 December, 2022</p>
-                <a href="#">
+                <a href="#" title="Learn More">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="52"
@@ -841,7 +840,7 @@
               <div class="articles-image">
                 <img
                   src="./assets/images/art2-min.webp"
-                  alt=""
+                  alt="kitchen2"
                   height="479"
                   width="340"
                 />
@@ -852,7 +851,7 @@
               </h4>
               <div class="other-details flex-center">
                 <p class="publication-date">26 December, 2022</p>
-                <a href="#">
+                <a href="#" title="Learn More">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="52"
@@ -881,7 +880,7 @@
               <div class="articles-image">
                 <img
                   src="./assets/images/adrt3-min.webp"
-                  alt=""
+                  alt="kitchen3"
                   height="479"
                   width="340"
                 />
@@ -892,7 +891,7 @@
               </h4>
               <div class="other-details flex-center">
                 <p class="publication-date">26 December, 2022</p>
-                <a href="#">
+                <a href="#" title="Learn More">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="52"
@@ -953,7 +952,7 @@
           <div class="brand-info">
             <div class="branding flex-wrap flex-center">
               <a href="#" class="brand flex-wrap flex-center">
-                <img src="./assets/icons/Logo.svg" alt="" />
+                <img src="./assets/icons/Logo.svg" alt="brand-logo" />
               </a>
             </div>
             <p class="slogan">
@@ -962,10 +961,18 @@
             </p>
             <!-- Social Icons Start. -->
             <div class="social-icons flex-wrap">
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" title="Facebook"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="#" title="Twitter"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="#" title="Linkedin"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a href="#" title="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
             </div>
             <!-- Social Icons End. -->
           </div>
@@ -1015,46 +1022,26 @@
     <!-- Footer Region End. -->
 
     <!-- Js Scripts. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./vendor/jquery.min.js"></script>
+    <script src="./dist/js/aos/aos.min.js"></script>
+    <script src="./vendor/slick/slick.min.js"></script>
+    <script src="./vendor/counterUp/jquery.counterup.min.js"></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
-      integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"
-      integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+    async
+    src="./vendor/counterUp/noframework.waypoints.min.js"
     ></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
-      integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+    async
+    type="text/javascript"
+    src="./dist/js/counterUp/jquery.waypoints.min.js"
     ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
-      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/fontawesome.min.js"
-      integrity="sha512-64O4TSvYybbO2u06YzKDmZfLj/Tcr9+oorWhxzE3yDnmBRf7wvDgQweCzUf5pm2xYTgHMMyk5tW8kWU92JENng=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script async src="./dist/js/slider.min.js"></script>
+    <script async src="./vendor/all.min.js"></script>
+    <script src="./dist/js/searchpopup.min.js"></script>
+    <script src="./dist/js/menu.min.js"></script>
+    <script async src="./dist/js/counter.min.js"></script>
     <script>
       AOS.init();
     </script>
-    <script src="./js/slider.js"></script>
-    <script src="./js/accordion.js"></script>
-    <script src="./js/searchpopup.js"></script>
-    <script src="./js/menu.js"></script>
-    <script src="./js/counter.js"></script>
   </body>
 </html>
